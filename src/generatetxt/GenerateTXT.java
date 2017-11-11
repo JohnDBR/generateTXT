@@ -259,8 +259,8 @@ public class GenerateTXT {
                 pw.println(tab + "</comp>");
                 lastX = lastX + 380;
             }*/
-            //TUNNELS FOR THE SNAKE WINDOW...
-            String line;
+            //GENERATES TUNNELS FOR THE SNAKE WINDOW...
+            /*String line;
             while ((line = br.readLine()) != null) {
                 pw.println(line);
             }
@@ -319,7 +319,62 @@ public class GenerateTXT {
                 pw.println(tab + "  <a name=\"label\" val=\"" + i + "p\"/>");
                 pw.println(tab + "</comp>");
                 lastY = lastY + 10;
+            }*/
+            //GENERATES TUNNELS SPLITTERS AND PINS FOR GAMEMASTER... 
+            /*lastX = 170;
+            lastY = 420;
+            String line;
+            while ((line = br.readLine()) != null) {
+                pw.println(line);
             }
+            for (int i = 1; i <= 104; i++) {
+                pw.println(tab + "<comp lib=\"0\" loc=\"(" + lastX + "," + lastY + ")\" name=\"Tunnel\">");
+                pw.println(tab + "  <a name=\"facing\" val=\"north\"/>");
+                pw.println(tab + "  <a name=\"width\" val=\"13\"/>");
+                pw.println(tab + "  <a name=\"label\" val=\"" + i + "c\"/>");
+                pw.println(tab + "</comp>");
+                lastX = lastX + 10;
+            }
+            lastX = 1410;
+            lastY = 390;
+            for (int i = 1; i <= 104; i++) {
+                pw.println(tab + "<comp lib=\"0\" loc=\"(" + lastX + "," + lastY + ")\" name=\"Tunnel\">");
+                pw.println(tab + "  <a name=\"facing\" val=\"south\"/>");
+                pw.println(tab + "  <a name=\"width\" val=\"13\"/>");
+                pw.println(tab + "  <a name=\"label\" val=\"" + i + "c\"/>");
+                pw.println(tab + "</comp>");
+                pw.println(tab + "<comp lib=\"0\" loc=\"(" + lastX + "," + lastY + ")\" name=\"Splitter\">");
+                pw.println(tab + "  <a name=\"facing\" val=\"south\"/>");
+                pw.println(tab + "  <a name=\"fanout\" val=\"3\"/>");
+                pw.println(tab + "  <a name=\"incoming\" val=\"13\"/>");
+                pw.println(tab + "  <a name=\"bit1\" val=\"0\"/>");
+                pw.println(tab + "  <a name=\"bit2\" val=\"0\"/>");
+                pw.println(tab + "  <a name=\"bit3\" val=\"0\"/>");
+                pw.println(tab + "  <a name=\"bit4\" val=\"0\"/>");
+                pw.println(tab + "  <a name=\"bit5\" val=\"0\"/>");
+                pw.println(tab + "  <a name=\"bit6\" val=\"1\"/>");
+                pw.println(tab + "  <a name=\"bit7\" val=\"1\"/>");
+                pw.println(tab + "  <a name=\"bit8\" val=\"1\"/>");
+                pw.println(tab + "  <a name=\"bit9\" val=\"1\"/>");
+                pw.println(tab + "  <a name=\"bit10\" val=\"1\"/>");
+                pw.println(tab + "  <a name=\"bit11\" val=\"1\"/>");
+                pw.println(tab + "  <a name=\"bit12\" val=\"2\"/>");
+                pw.println(tab + "</comp>");
+                int pinX = lastX + 20;
+                int pinY = lastY + 20;
+                pw.println(tab + "<comp lib=\"0\" loc=\"(" + pinX + "," + pinY + ")\" name=\"Pin\">");
+                pw.println(tab + "  <a name=\"facing\" val=\"north\"/>");
+                pw.println(tab + "  <a name=\"output\" val=\"true\"/>");
+                pw.println(tab + "  <a name=\"width\" val=\"6\"/>");
+                pw.println(tab + "</comp>");
+                pinX = lastX + 30;
+                pw.println(tab + "<comp lib=\"0\" loc=\"(" + pinX + "," + pinY + ")\" name=\"Pin\">");
+                pw.println(tab + "  <a name=\"facing\" val=\"north\"/>");
+                pw.println(tab + "  <a name=\"output\" val=\"true\"/>");
+                pw.println(tab + "  <a name=\"width\" val=\"6\"/>");
+                pw.println(tab + "</comp>");
+                lastX = lastX + 110;
+            }*/
 
             pw.close();
             fw.close();
